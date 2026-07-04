@@ -1,0 +1,1 @@
+progetto per libreria BerkeleyDB versione 2.7.7, caricare e compilare \BerkeleyDB\build_win32\DB_DLL.sln
