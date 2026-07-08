@@ -22,7 +22,7 @@ Read the [document](https://web.mit.edu/Ghudson/dev/third/rpm/db/docs/ref/refs/b
 Then in **1996**, **Netscape** came and asked the creators (Seltzer and Bostic) to beef up the library for their browsers and servers. That push led them to found a company called **Sleepycat Software**.
 
 Over time, they kept adding major features: version 2.x added **locking** for concurrency, version 3.x added **transactions** and version 4.x introduced **replication**. **February 2006**, Oracle bought Sleepycat, and they've been maintaining it ever since.
-A major issue came in **2013**, with the release of the version 6.0, because Oracle changed the original SleepyCat license, and switched to the **AGPLv3** license, a _smart move_ to de-facto restrict and inhibit the use and distribution of the BDB source code. This is why I never updated this interface to the latest version of the BerkeleyDB. The 2.7.7 was a super compact version and ideal for "old school" C/C++ Win32 projects, where efficiency and no frills matter more than anything else.
+A major issue came in **2013**, with the release of the version 6.0, because Oracle changed the original SleepyCat license, and switched to the **AGPLv3** license, a _smart move_ to de-facto restrict and inhibit the use and distribution of the BDB source code. This is why I never updated to the latest version of the BerkeleyDB. The 2.7.7 was a super compact version and ideal for "old school" C/C++ Win32 projects, where efficiency and no frills matter more than anything else.
 
 ## Implementation notes
 **Important note on projects structure:**
