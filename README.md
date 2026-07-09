@@ -21,7 +21,7 @@ Read the [document](https://web.mit.edu/Ghudson/dev/third/rpm/db/docs/ref/refs/b
 
 Then in **1996**, **Netscape** came and asked the creators (Seltzer and Bostic) to beef up the library for their browsers and servers. That push led them to found a company called **Sleepycat Software**.
 
-Over time, they kept adding major features: version 2.x added **locking** for concurrency, version 3.x added **transactions** and version 4.x introduced **replication**. **February 2006**, Oracle bought Sleepycat, and they've been maintaining it ever since.
+Over time, they kept adding major features: version 2.x added **locking** for concurrency, version 3.x added **transactions** and version 4.x introduced **replication**. In **2006**, Oracle bought Sleepycat, and they've been maintaining it ever since.
 A major issue came in **2013**, with the release of the version 6.0, because Oracle changed the original SleepyCat license, and switched to the **AGPLv3** license, a _smart move_ to de-facto restrict and inhibit the use and distribution of the BDB source code. This is why I never updated to the latest version of the BerkeleyDB. The 2.7.7 was a super compact version and ideal for "old school" C/C++ Win32 projects, where efficiency and no frills matter more than anything else.
 
 ## Implementation notes
@@ -37,10 +37,9 @@ L:\
 
 The L:\Lib directory must be created manually because it is the directory where the output BerkeleyDB DLL will be copied and where my other project looks for libraries and DLLs to compile and link.
 
-
 Instead of changing the Visual Studio settings in the project file, I recommend mapping a local folder to a virtual L: drive with the Windows SUBST command:
-- Create a directory on your local drive, for example,  `C:\DEV`.
+- Create a directory on your local drive, for example `C:\DEV`.
 - Download and extract all the repositories inside that directory.
-- Open the Windows Command Prompt (press  `Win + R`  to open the Run dialog, type  `cmd.exe`  and press  `Enter`) and from the Console run the following command:  `SUBST L: C:\DEV`
+- Open the Windows Command Prompt (press `Win + R` to open the Run dialog, type `cmd.exe` and press `Enter`) and from the Console run the following command: `SUBST L: C:\DEV`
 
 Luca P.
