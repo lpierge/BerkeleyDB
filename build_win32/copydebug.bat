@@ -1,5 +1,5 @@
 @echo off
-if not exist L:\Lib goto error
+if not exist L:\Lib\NUL goto error
 copy .\Debug\BerkeleyDB.d.lib L:\Lib
 copy .\Debug\BerkeleyDB.d.dll L:\Lib
 goto done
