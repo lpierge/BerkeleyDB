@@ -4,12 +4,12 @@ This is the original **BerkeleyDB 2.7.7** distribution from Sleepycat Software, 
 The original copyright notice can be found in the README file and the original license is available in the LICENSE file.
 
 I use this project for my own C/C++ interface (`CBerkeleyDB.cpp/.h`, `CBase.cpp/.h`, `CBdbtf.cpp/.h`, etc.) for tabular data access. See the [Include](https://github.com/lpierge/Include) and [Library](https://github.com/lpierge/Library) repositories.
-[Calimero](https://github.com/lpierge/Calimero) also uses that interface to handle all the data related to the local files.
+[Calimero](https://sourceforge.net/projects/kalimero/) also uses that interface to handle all the data related to the local files.
 
 ## Berkeley DB
 **What it does**
 
-Berkeley DB is an **embedded database**. Unlike something like MySQL, which runs as a separate server process, this thing is just a **library** that gets linked into the application code, which makes it very fast because the code just makes function calls to read/write data (no network overhead, no separate process, etc.).
+Berkeley DB is an **embedded database**. Unlike products like MySQL, which runs as a separate server process, this thing is just a **library** that gets linked into the application code, which makes it very fast because the code just makes function calls to read/write data (no network overhead, no separate process, etc.).
 
 Basically, this library is a **key/value** store. You provide a key, and it returns the corresponding value. You can even choose different storage structures like **B-Tree**, **Hash**, or **queues**, depending on how you need to access your data.
 
